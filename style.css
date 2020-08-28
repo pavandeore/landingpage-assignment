@@ -5,7 +5,6 @@
 }
 :root{
     --faint-coral : rgb(224, 129, 86);
-    --faint-gray : rgb(241, 241, 241);
     --white : #fff;
 }
 
@@ -13,8 +12,10 @@
 
 .container-1{
     background: var(--faint-coral);
-    height: 90vh;
     position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100vh;
 }
 .sub-container{
     padding-top: 30px;
@@ -54,15 +55,25 @@
     padding-right: 55px;
 }
 .light-txt{
-    opacity: 0.8;
+    opacity: 0.7;
     font-weight: 500;
 }
 
 /* Second Viewport Start */
 
 .container-2{
-    height: 90vh;
-    background: var(--faint-gray);
+    height: 100vh;
+    position: relative;
+}
+.video-div > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
 }
 
 /* Responsive Tags */
