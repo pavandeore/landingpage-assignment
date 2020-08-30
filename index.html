@@ -1,38 +1,55 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Adwaits | Landing Page</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    </head>
-    <body>
-        <div class="container-1">
-            <div class="sub-container">
-                <nav class="navbar">
-                    <img class="logo" src="Asset/ADWAITSLogo.png" />
-                </nav>
-                <div class="middle-text-div">
-                    <h1>Designing Experiences
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Adwaits | Landing Page</title>
+  </head>
+  <body>
+
+    <div class="container-fluid  first-container">
+        <div class="container">
+            <nav class="nav navbar">
+                <img class="logo" src="Asset/ADWAITSLogo.png" />
+            </nav>
+            <div class="row" style="height: 350px;">
+                <div class="col-12 my-auto">
+                    <h1 class="text-white font-weight-bold ">Designing Experiences
                         within the Product Ecosystem
                         for Saas Companies.</h2>
-                </div>
-                <div class="end-div">
-                    <p class="txt-1">Client: <a class="light-txt">ABC Pvt Ltd</a></p>
-                    <p class="txt-2">Project focus: <a class="light-txt">UX Design, Visual Design and Web </a></p>
-                </div>
+                </div>    
+            </div>
+            <div class="end-div text-white" style="font-size: 18px;">
+                <p >Client: <a class="light-txt text-white font-weight-light">ABC Pvt Ltd</a></p>
+                <p >Project focus: <a class="light-txt text-white font-weight-light">UX Design, Visual Design and Web</a></p>
             </div>
         </div>
-        
-        <div class="container-2">
-            <div class="video-div">
-                <img id="laptop-img" src="./Asset/LaptopSkin.png" />
+    </div>
+    
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col col-sm-1 col-md-2"></div>
+            <div class="col-12 col-sm-10 col-md-8">
+                <img id="laptop-img" class="img-fluid" src="./Asset/LaptopSkin.png" />
+                <video id="video" autoplay muted loop src="./Asset/LaptopScreenVideo.mp4" poster="./Asset/start.png"></video>
             </div>
+            <div class="col col-sm-1 col-md-2"></div>
         </div>
+    </div>
 
-        <script>
-            let secondDiv = document.querySelector('.container-2');
-            let laptopImg = document.querySelector('#laptop-img');
-            
-        </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+
+    </script>
+
     </body>
 </html>

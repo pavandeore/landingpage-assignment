@@ -1,100 +1,65 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: arial;
-}
 :root{
     --faint-coral : rgb(224, 129, 86);
-    --white : #fff;
 }
-
 /* First Viewport Start*/
-
-.container-1{
+.nav > img{
+    margin-left: -19px;
+}
+.first-container{
     background: var(--faint-coral);
     position: relative;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     height: 100vh;
-}
-.sub-container{
-    padding-top: 30px;
-    padding-left: 50px;
-}
-.navbar{
-    width: 100%;
-}
-.middle-text-div{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.middle-text-div > h1{
-    font-weight: bold;
-    font-size: 2.5em;
-    color: var(--white);
 }
 .end-div{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 0px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
-.end-div > p{
-    line-height: 2.5;
-    color: var(--white);
-    font-size: 18px;
-    font-weight: 700;
-}
-.end-div > .txt-1{
-    padding-left: 55px;
-}
-.end-div > .txt-2{
-    padding-right: 55px;
+    width: 85%;
+    transform: translateX(-8%);
 }
 .light-txt{
     opacity: 0.7;
-    font-weight: 500;
+}
+a:hover{
+    text-decoration: none!important;
 }
 
 /* Second Viewport Start */
 
-.container-2{
-    height: 100vh;
-    position: relative;
-}
-.video-div > img{
+#video{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 100%;
-    background-size: cover;
-    background-position: center center;
+    width: 32vw;
     height: 80vh;
+    z-index: 2;
 }
 
-/* Responsive Tags */
 
-@media (max-width: 460px){
-    .sub-container{
-        padding-top: 15px;
-        padding-left: 25px;
+.videoNew{
+    opacity: 1;
+}
+
+@media (max-width : 990px){
+    #video{
+        width: 260px;
     }
-    .end-div{
-        bottom: 10px;
+}
+@media (max-width : 900px){
+    #video{
+        width: 255px;
     }
-    .end-div > p{
-        line-height: 1.5;
-        font-size: 18px;
-        font-weight: 700;
+}
+@media (max-width : 770px){
+    #video{
+        width: 240px;
     }
-    .end-div > .txt-1{
-        padding-left: 27px;
-    }
-    .end-div > .txt-2{
-        padding-right: 27px;
+}
+@media (max-width : 574px){
+    #video{
+        width: 52vw;
     }
 }
